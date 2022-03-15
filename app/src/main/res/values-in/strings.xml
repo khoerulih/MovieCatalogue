@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieCatalogue</string>
+    <string name="title_movies">Film</string>
+    <string name="title_tv_shows">Serial Tv</string>
+    <string name="release_date">Tanggal Rilis</string>
+    <string name="overview">Sinopsis</string>
+    <string name="change_language">Pengaturan Bahasa</string>
+    <string name="language_summary">Ubah pengaturan bahasa</string>
+    <string name="label_title">Judul</string>
+    <string name="language_code">id-Id</string>
+    <string name="detail_poster">Poster Detail</string>
+    <string name="image_poster">Poster Image</string>
+    <string name="empty_overview">Sinopsis belum tersedia dalam bahasa indonesia</string>
+    <string name="background_image">Background Image</string>
+    <string name="rating">Rating</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorite_status">Favorite Status</string>
+    <string name="success_favourite">Ditambahkan ke favorit</string>
+    <string name="failed_favourite">Gagal ditambah ke favorit</string>
+    <string name="success_delete">Berhasil menghapus dari favorit</string>
+    <string name="failed_delete">Gagal menghapus dari favorit</string>
+    <string name="empty_movie_favourite">Belum Ada Film Yang Di Favoritkan</string>
+    <string name="empty_show_favourite">Belum Ada Serial Tv Yang Di Favoritkan</string>
+    <string name="movie_favourite">Movie Favorit</string>
+    <string name="show_favourite">Serial Tv Favorit</string>
+    <string name="setting">Pengaturan</string>
+    <string name="search_movie">Cari Film</string>
+    <string name="search_show">Cari Serial TV</string>
+    <string name="key_daily">daily</string>
+    <string name="key_release">release</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="release_reminder">Ingatkan Info Film Terbaru</string>
+    <string name="daily_summary">Mengingatkan kamu untuk kembali menggunakan aplikasi</string>
+    <string name="release_summary">Mengingatkan kamu film-film terbaru yang rilis hari ini</string>
+    <string name="new_release">New Release</string>
+    <string name="setup_daily">Pengingat harian telah diatur</string>
+    <string name="setup_release">Pengingat rilis film telah diatur</string>
+    <string name="cancel_daily">Pengingat harian telah dibatalkan</string>
+    <string name="cancel_release">Pengingat rilis film telah dibatalkan</string>
+    <string name="daily_message">Kami Merindukanmu, Mari kembali ke MovieCatalogue</string>
+    <string name="release_message">Film Yang Rilis Hari Ini</string>
+    <string name="released_today">Telah dirilis hari ini!!</string>
+    <string name="new_notification">notifikasi baru</string>
+    <string name="movie_released_today">Film Telah dirilis hari ini!!</string>
+</resources>

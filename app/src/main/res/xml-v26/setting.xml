@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+    <SwitchPreference
+        android:key="@string/key_daily"
+        android:defaultValue="false"
+        android:title="@string/daily_reminder"
+        android:summary="@string/daily_summary"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        android:key="@string/key_release"
+        android:defaultValue="false"
+        android:title="@string/release_reminder"
+        android:summary="@string/release_summary"
+        app:iconSpaceReserved="false"/>
+    <Preference
+        android:title="@string/change_language"
+        android:summary="@string/language_summary"
+        app:iconSpaceReserved="false">
+        <intent android:action="android.settings.LOCALE_SETTINGS"/>
+    </Preference>
+
+</PreferenceScreen>

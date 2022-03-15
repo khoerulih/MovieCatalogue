@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MovieFavourite</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_tv_shows">TV Shows</string>
+    <string name="release_date">Release Date</string>
+    <string name="overview">Overview</string>
+    <string name="change_language">Change Language</string>
+    <string name="label_title">Title</string>
+    <string name="language_code">en-US</string>
+    <string name="detail_poster">Detail Poster</string>
+    <string name="image_poster">Image Poster</string>
+    <string name="empty_overview">No overview in your language</string>
+    <string name="background_image">Background Image</string>
+    <string name="rating">Rating</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorite_status">Favorite Status</string>
+    <string name="success_favourite">Added to favourite</string>
+    <string name="failed_favourite">Failed added to favourite</string>
+    <string name="success_delete">Deleted from favourite</string>
+    <string name="failed_delete">Failed delete from favourite</string>
+    <string name="empty_movie_favourite">Favourite Movie is Empty</string>
+    <string name="empty_show_favourite">Favourite Tv Show is Empty</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="movie_favourite">Movie Favourite</string>
+    <string name="empty">Empty</string>
+</resources>

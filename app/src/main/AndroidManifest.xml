@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.moviecatalogue">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission android:name="com.example.moviecatalogue.READ_DATABASE" />
+    <permission android:name="com.example.moviecatalogue.WRITE_DATABASE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity android:name=".SettingActivity" />
+
+        <provider
+            android:name=".provider.FavouriteProvider"
+            android:authorities="com.example.moviecatalogue"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.example.moviecatalogue.READ_DATABASE"
+            android:writePermission="com.example.moviecatalogue.WRITE_DATABASE" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetailFavouriteActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <service
+            android:name=".widget.FavouriteMovieWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name=".widget.FavouriteMovieWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favourite_movie_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.FavouriteShowWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name=".widget.FavouriteShowWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favourite_show_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>
